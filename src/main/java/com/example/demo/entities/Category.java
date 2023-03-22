@@ -1,6 +1,8 @@
 package com.example.demo.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -33,5 +35,5 @@ public class Category {
 	private String categoryDescription;
 	
 	@OneToMany(mappedBy = "category",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-	private Set<Post> posts=new HashSet<>();
+	private List<Post> posts=new ArrayList<>();
 }
