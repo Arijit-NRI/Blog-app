@@ -8,7 +8,7 @@ import com.example.demo.payloads.PostResponse;
 
 public interface PostService {
 
-	PostDto createPost(PostDto postDto,Integer userId,Integer categoryId);
+	PostDto createPost(PostDto postDto,Integer userId,Integer categoryId);  
 	PostDto updatePost(PostDto postDto, Integer postId);
 	void deletePostById(Integer userId);
 	PostResponse getAllPost(Integer pageNumber,Integer pageSize,String sortBy,String sortDir);
